@@ -11,11 +11,12 @@
 
     <button (click)= gestAut() >Connetti</button>
 </div>
+<div *ngIf="consentito">{{infoMsg}}</div>
 <br>
 <br>
-<p>
+<!-- <p>
     Il tua Userid è {{ userid }} e la  tua password è {{ password }}
-</p>
+</p> -->
 
 <!-- <button (click) = gestAut()>Connetti</button>
 </div>
