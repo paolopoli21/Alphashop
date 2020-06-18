@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
+  saluti = 'Benvenuti nel sito alphatashop';
+  titolo2 = 'Selezione un articolo da inserire';
 
   messaggio = "Sono il componente welcome";
 
