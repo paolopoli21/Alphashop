@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "alphashop"
+    }
+  },
+  "defaultProject": "alphashop",
+  "cli": {
+    "analytics": "09bb8b7e-08c4-4868-87a6-cbed258ca0cd"
+  }
 }
