@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  userid = "Nicola"
+  userid = ""
   password = "";
+  autenticato = true;
+  errorMsg = "Spiacente la userid o la password sono errati!";
 
   constructor() { }
 
@@ -16,8 +18,11 @@ export class LoginComponent implements OnInit {
   }
 
   gestAut(){
-    console.log(this.userid)
-    console.log(this.password)
+    if(this.userid === "Nicola" && this.password ==="123"){
+      this.autenticato = true;
+    }
+    else{
+      this.autenticato = false;
+    }
   }
-
 }

@@ -1,14 +1,16 @@
 
 <!-- <div *ngIf='!autenticato'> {{errorMsg}} </div>
 <div> -->
-<label for="userId">User Id:</label>
-<input type="text"  id="userId"  placeholder="Nome utente" [(ngModel)] = "userid" >
+<div *ngIf="!autenticato">{{errorMsg}}</div>
+<div>
+    <label for="userId">User Id:</label>
+    <input type="text"  id="userId"  placeholder="Nome utente" [(ngModel)] = "userid" >
 
-<label for="password">Password:</label>
-<input type="password"  id="password" placeholder="Password" [(ngModel)]="password">
+    <label for="password">Password:</label>
+    <input type="password"  id="password" placeholder="Password" [(ngModel)]="password">
 
-<button (click)= gestAut() >Connetti</button>
-
+    <button (click)= gestAut() >Connetti</button>
+</div>
 <br>
 <br>
 <p>
