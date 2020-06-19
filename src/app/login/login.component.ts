@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   gestAut(){
     if(this.userid === "Nicola" && this.password ==="123"){
       //this.autenticato = true;
-      this.route.navigate(['welcome'])
+      this.route.navigate(['welcome', this.userid])
       this.consentito = true;
     }
     else{
