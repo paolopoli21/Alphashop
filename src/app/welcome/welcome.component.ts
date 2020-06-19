@@ -17,7 +17,7 @@ export class WelcomeComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.utente = this.route.snapshot.params['userid']
+    this.utente = this.route.snapshot.params['userid'];
   }
 
 }
