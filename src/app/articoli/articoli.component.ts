@@ -1,5 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+export class Articoli{
+  constructor(
+    public codart: string,
+    public descrizione: string,
+    public um: string,
+    public pzcart: number,
+    public peso: number,
+    public prezzo: number,
+    public isactive: boolean,
+    public data: Date
+  ){}
+}
+
 @Component({
   selector: 'app-articoli',
   templateUrl: './articoli.component.html',
