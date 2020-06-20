@@ -27,5 +27,7 @@ export class AuthappService {
     return (utente != null)? true: false;
   }
 
-  
+  clearAll(){
+    sessionStorage.removeItem("Utente");
+  }
 }
