@@ -16,4 +16,16 @@ export class AuthappService {
       return false;
     }
   }
+
+  loggerUser(){
+    let utente = sessionStorage.getItem("Utente");
+    return (utente != null)? utente: "";
+  }
+
+  isLogged(){
+    let utente = sessionStorage.getItem("Utente");
+    return (utente != null)? true: false;
+  }
+
+  
 }
