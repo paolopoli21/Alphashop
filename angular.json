@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/open-iconic-bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/bootstrap.min.js"
+            ]
+            
           },
           "configurations": {
             "production": {
@@ -119,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "alphashop"
+    }
+  },
+  "defaultProject": "alphashop",
+  "cli": {
+    "analytics": "09bb8b7e-08c4-4868-87a6-cbed258ca0cd"
+  }
 }
